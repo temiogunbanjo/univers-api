@@ -1,14 +1,14 @@
 {
-  "name": "starter-rest-api",
+  "name": "univers-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/bin/www.js",
   "scripts": {
-    "dev": "env-cmd nodemon index.js",
+    "dev": "env-cmd nodemon src/bin/www.js",
     "repl": "env-cmd node"
   },
   "keywords": [],
-  "author": "Kam Lasater <kam.lasater@cyclic.sh>",
+  "author": "Ogunbanjo Temiloluwa <ogunbanjotemiloluwa@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.16"
