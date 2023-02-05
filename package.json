@@ -5,8 +5,8 @@
   "main": "src/bin/www.js",
   "scripts": {
     "build": "npx rimraf ./build && npx tsc",
-    "start": "npm run build && node build/bin/www.js",
-    "start:dev": "npm run lint && nodemon",
+    "start": "node build/bin/www.js",
+    "start:dev": "npm run lint && npm run build && nodemon",
     "dev": "env-cmd nodemon",
     "repl": "env-cmd node",
     "lint": "eslint . --ext .ts"
