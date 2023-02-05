@@ -3,7 +3,7 @@ const router = require("express").Router();
 const controllers = require("../controllers");
 
 // Create or Update an item
-router.post("/:col/:key", controllers.updateItem);
+router.post("/item/create", controllers.createUpdateItem);
 
 // Delete an item
 router.delete("/:col/:key", controllers.deleteItem);

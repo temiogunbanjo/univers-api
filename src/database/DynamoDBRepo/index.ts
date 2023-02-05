@@ -8,7 +8,7 @@ module.exports = {
     console.log(item);
 
     console.log(
-      `from collection: ${col} delete key: ${key} with params ${JSON.stringify(
+      `from collection: ${col} create key: ${key} with params ${JSON.stringify(
         { col, key }
       )}`
     );

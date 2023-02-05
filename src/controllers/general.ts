@@ -7,11 +7,11 @@ const {
 
 module.exports = {
   // Create or Update an item
-  async updateItem(req: Request, res: Response) {
+  async createUpdateItem(req: Request, res: Response) {
     console.log(req.body);
 
-    const col = req.params.col;
-    const key = req.params.key;
+    const col = 'animals';
+    const key = req.body.name;
     
     const item = await dataSource.updateItem(col, key, req.body);
     console.log(JSON.stringify(item, null, 2));
