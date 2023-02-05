@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/bin/www.js",
   "scripts": {
-    "build": "npm install && rimraf ./build && tsc",
+    "build": "npx rimraf ./build && npx tsc",
     "start": "npm run build && node build/bin/www.js",
     "start:dev": "npm run lint && nodemon",
     "dev": "env-cmd nodemon",
